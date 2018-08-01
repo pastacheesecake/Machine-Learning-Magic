@@ -16,7 +16,7 @@ NLTK - Tensorflow (soon)
 
 It all depends on what you want to write, my personal method is quite simple:
 
-1. Get a plain-text library of books you wanna cut-up from and save them in our project folder. *Can get PDFs but then you'd need to extract the text and PFD confersion in Python 3 is... not the best tbh)*
+1. Get a plain-text library of books you wanna cut-up from and save them in your project folder. *Can get PDFs but then you'd need to extract the text and PDF text-extraction in Python 3 is... not the best tbh)*
 2. Tokenize the texts using `nltk.tokenize()` and dump those results somewhere *(cause we don't wanna repeat the process every time we write something)* i.e
 
 ```python
