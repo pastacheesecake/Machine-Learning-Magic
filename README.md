@@ -31,7 +31,7 @@ for filename in glob.glob(os.path.join(folder_path, '*')):  #Finds all files in 
     container = [item for sublist in container for item in sublist] #flattens the list of lists, maybe slow... fix it yourself
 with open('results_poetry.txt','wb') as results:
     pickle.dump(container,results)
-wb.close()
+    results.close()
     
     
 ```
