@@ -1,6 +1,7 @@
 # Machine-Learning-Magic
 NLTK - Tensorflow (soon)
 
+Writing poetry and narrative texts using statistical-demon-summoning (cause human inspiration is overrated I guess)
 
 # Machine Learning Narrative - Poetry
 
