@@ -10,7 +10,7 @@ Writing poetry and narrative texts using statistical-demon-summoning (cause huma
 * __Python 3__ (I suggest Anaconda 3)
 * NumPy, SciPy, Stats and the like (come with Anaconda)
 * __NLTK__, you should download all the corpus and associated modules [NLTK](https://www.nltk.org) (either `pip install nltk` or `conda install nltk` )
-* TensorFlow for Python (for future features) [TensorFlow Python3 API](https://www.tensorflow.org/api_docs/python/)
+* TensorFlow for Python [TensorFlow Python3 API](https://www.tensorflow.org/api_docs/python/)
 * Pickle and JSON if wanna get fancy [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]	
 
 ## Poetry
@@ -58,3 +58,26 @@ def analyse(sentences): #Accepts list of sentences and performs sentiment intens
             
 ```
 * *Profit?*
+
+
+## Narrative
+
+To be fair, there's no straight-up method to write narrative texts using NLTK or plain Python, there's several TensorFlow implementations though, but they're all equally as convoluted and nonsensical as Infinite Jest. 
+
+1. Train your own neural network using books/texts you want to replicate (needs time, a good machine and several hours or Google Cloud if you're loaded)
+2. Using a pre-trained neural network (won't help you with this one bb)
+3. Cheating using NLTK tokens and Chomsky Hierarchy
+
+### TensorFlow implementation (thanks [Sung Kim](https://github.com/hunkim))
+
+1. Install Python3 TensorFlow API `pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl` or `conda install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl`
+2. Download [Multi-layer Recurrent Neural Networks package](https://github.com/hunkim/word-rnn-tensorflow)
+3. Replace the `input.txt` file in the TinyShakespeare folder of MRNNP with your training text
+4. Run `train.py`
+5. Parse in sample.py
+
+### NLTK-Chomsky cheating
+ 
+soon
+
+
