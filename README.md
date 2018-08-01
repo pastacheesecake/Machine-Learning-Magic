@@ -9,7 +9,7 @@ Writing poetry and narrative texts using statistical-demon-summoning (cause huma
 
 * __Python 3__ (I suggest Anaconda 3)
 * NumPy, SciPy, Stats and the like (come with Anaconda)
-* __NLTK__, you should download all the corpus and associated modules [NLTK](https://www.nltk.org) (either `pip install nltk` or `conda install nltk`
+* __NLTK__, you should download all the corpus and associated modules [NLTK](https://www.nltk.org) (either `pip install nltk` or `conda install nltk` )
 * TensorFlow for Python (for future features) [TensorFlow Python3 API](https://www.tensorflow.org/api_docs/python/)
 * Pickle and JSON if wanna get fancy [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]	
 
