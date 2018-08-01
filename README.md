@@ -73,8 +73,8 @@ To be fair, there's no straight-up method to write narrative texts using NLTK or
 1. Install Python3 TensorFlow API `pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl` or `conda install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl`
 2. Download [Multi-layer Recurrent Neural Networks package](https://github.com/hunkim/word-rnn-tensorflow)
 3. Replace the `input.txt` file in the TinyShakespeare folder of MRNNP with your training text
-4. Run `train.py`
-5. Parse in sample.py
+4. Run `train.py` (this will take several hours/computing power, check CPU/GPU temperature and whatnot)
+5. Parse in sample.py [For more details](https://github.com/hunkim/word-rnn-tensorflow#beam-search)
 
 ### NLTK-Chomsky cheating
  
