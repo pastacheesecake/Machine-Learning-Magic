@@ -39,5 +39,5 @@ wb.close()
 3. Having all your words tokenized, do cut-up magic a-la *Burroughs* or *Dada*, here's my method:
 * Randomly select words from your pickle dump/text file using python's random module 
 * Filter by number of syllables (use either [Pyphen](http://pyphen.org), `nltk.cmudict` or code your own syllable-counting function like a big boy ( ಠ ͜ʖ ಠ)	
-* Apply sentiment analysis (either pre-trained `nltk.sentiment.vader` [Docu](https://www.nltk.org/_modules/nltk/sentiment/vader.html) or train your own TensorFlow neural network daddy *more on this later I guess*), yet again filter or do as you please
+* Apply sentiment analysis (either pre-trained `nltk.sentiment.vader` [Docu](https://www.nltk.org/_modules/nltk/sentiment/vader.html) or train your own TensorFlow neural network like a good hee-ho *more on this later I guess*), yet again filter or do as you please
 * *Profit?*
