@@ -28,7 +28,7 @@ for filename in glob.glob(os.path.join(folder_path, '*')):  #Finds all files in 
     text = ' '.join(f.read().splitlines()) #strips newlines
     lines_list = tokenize.sent_tokenize(text) #nltk tokenization
     container.append(lines_list)
-container = [item for sublist in container for item in sublist]
+    container = [item for sublist in container for item in sublist] #flattens the list of lists, maybe slow... fix it yourself
 with open('results_poetry.txt','wb') as results:
     pickle.dump(container,results)
 wb.close()
