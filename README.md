@@ -133,7 +133,7 @@ A way to fix this would be pre-classifying verbs/adjectives/nouns we would like 
 
 Common NLTK tags
 
-Tag| meaning | example
+Tag| meaning | examples
 --- | --- | ---
 ADJ | adjective | cool, bad, great
 ADV | adverb | really, early
@@ -142,6 +142,19 @@ NP | Proper name | Dante, Africa, Toto
 N | Common name | book, duck, demon
 VERB | Verb | hunt, kill, talk
 PRON | Pronoun | he, she, it, they (reeee)
+DET | Determinant | The, a, some
+
+The classic NLTK tagging convention is a tuple as follows ('Word','tag')
+
+
+
+As you can probably tell, there are some combinations that make readable sentences, and some that don't; simple English sentence structures would be:
+
+DET | N | VERB  *The dog walks*
+N | VERB | ADJ *Dante is cool*
+
+As you can also probably tell, there's infinite combinations that either add or substract a plethora of elements that are optional in a sentence, such as adverbs or determinants. [More info](https://en.wikipedia.org/wiki/Phrase_structure_rules). 
+
 
 
 ```python
@@ -155,5 +168,6 @@ from nltk.corpus import brown
 ### Further reading
 
 [Universal Tagset](http://www.lrec-conf.org/proceedings/lrec2012/pdf/274_Paper.pdf)
+
 [NLTK Tagging Chapter](https://www.nltk.org/book/ch05.html)
 
