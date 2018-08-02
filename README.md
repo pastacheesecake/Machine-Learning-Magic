@@ -112,6 +112,7 @@ So, in that regard, from a grammatical point of view a sentence like *John eats 
 . Of course the meaning is very different, but that's semantics and not grammar, duh.
 
 Our goal is to parse our text in such a way that we can correctly write sentences following a series of predetermined grammatical  structures or rules using a parse tree such as:
+
 ![Hm](http://2.bp.blogspot.com/-0OviR_gBISo/U1JJAi67DaI/AAAAAAAAAnE/BSGxu60uDbo/s1600/tree+why_graphs002.png "Chomsky Tree")
 
 So, in simpler words:
@@ -121,7 +122,38 @@ So, in simpler words:
 
 In this context, we would like an algorithm that avoids texts like:
  
- *Dante is a demon hunter. Dante likes to kill demons. This text features Dante. Dante is from the Devil May Cry Series. I love Dante. Dante loves Dante*
+ *Dante is a demon hunter. Dante likes to kill demons. This text features Dante. Dante is from the Devil May Cry Series. I love Dante. Dante loves Dante.*
  
-A way to fix this would be pre-classifying verbs/adjectives/nouns we would like our text to feature in a JSON file and then pick at random. That would defy the whole purpose of implementing machine learning training though.
+A way to fix this would be pre-classifying verbs/adjectives/nouns we would like our text to feature in a JSON file, then pick at random. Even when this defeats the whole purpose of machine learning, let's try tackling this as easy as possible:
+
+* Select an appropiate NLTK corpus (a collection of tagged words and texts) *this won't be a problem since as I suggested, you downloaded the whole NLTK packag*, for literature I recommend either Brown or Gutenberg. 
+* Tag all the words you already tokenized from your training texts
+* Select at random according to previously determined criteria such as topic, subject, etc
+* Order and re-write according to grammatical structure following `nltk.tag` tag convention
+
+Common NLTK tags
+
+Tag| meaning | example
+--- | --- | ---
+ADJ | adjective | cool, bad, great
+ADV | adverb | really, early
+CONJ | Conjunction | but, though, because
+NP | Proper name | Dante, Africa, Toto
+N | Common name | book, duck, demon
+VERB | Verb | hunt, kill, talk
+PRON | Pronoun | he, she, it, they (reeee)
+
+
+```python
+from nltk.corpus import brown
+
+
+```
+
+
+
+### Further reading
+
+[Universal Tagset](http://www.lrec-conf.org/proceedings/lrec2012/pdf/274_Paper.pdf)
+[NLTK Tagging Chapter](https://www.nltk.org/book/ch05.html)
 
