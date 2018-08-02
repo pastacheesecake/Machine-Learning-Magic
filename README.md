@@ -10,8 +10,8 @@ Writing poetry and narrative texts using statistical-demon-summoning (cause huma
 * __Python 3__ (I suggest Anaconda 3)
 * NumPy, SciPy, Stats and the like (come with Anaconda)
 * Twython, won't do Twitter magic but `nltk.vader` needs it (╯°益°)╯彡┻━┻	
-* __NLTK__, you should download all the corpus and associated modules [NLTK](https://www.nltk.org) (either `pip install nltk` or `conda install nltk` )
-* TensorFlow for Python [TensorFlow Python3 API](https://www.tensorflow.org/api_docs/python/)
+* [__NLTK__](https://www.nltk.org), downloading all the sub-packages is highly encouraged (either `pip install nltk` or `conda install nltk` ) and then `nltk.download()`
+* [TensorFlow Python3 API](https://www.tensorflow.org/api_docs/python/)
 * Pickle and JSON if wanna get fancy [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]	
 
 ## Poetry
@@ -126,7 +126,7 @@ In this context, we would like an algorithm that avoids texts like:
  
 A way to fix this would be pre-classifying verbs/adjectives/nouns we would like our text to feature in a JSON file, then pick at random. Even when this defeats the whole purpose of machine learning, let's try tackling this as easy as possible:
 
-* Select an appropiate NLTK corpus (a collection of tagged words and texts) *this won't be a problem since as I suggested, you downloaded the whole NLTK packag*, for literature I recommend either Brown or Gutenberg. 
+* Select an appropiate NLTK corpus (a collection of tagged words and texts) *this won't be a problem since as I suggested, you downloaded the whole NLTK package*, for literature I recommend either Brown or Gutenberg. 
 * Tag all the words you already tokenized from your training texts
 * Select at random according to previously determined criteria such as topic, subject, etc
 * Order and re-write according to grammatical structure following `nltk.tag` tag convention
