@@ -104,14 +104,24 @@ To be fair, there's no straight-up method to write narrative texts using NLTK or
 4. Run `train.py` (this will take several hours/computing power, check CPU/GPU temperature and whatnot)
 5. Parse in sample.py [For more details](https://github.com/hunkim/word-rnn-tensorflow#beam-search)
 
-### NLTK-Chomsky cheating
+### NLTK-Chomsky Cheating featuring Dante from the Devil May Cry Series
  
 According to context-free generative grammar, a sentence is -more or less- a specific (terminal or leaf) node of an abstract *generator of sentences* or root node (don't quote me on this).
 
 So, in that regard, from a grammatical point of view a sentence like *John eats a pineapple* is no different than *Dante kills demons*
 . Of course the meaning is very different, but that's semantics and not grammar, duh.
 
-Our goal is to parse our text in such a way that we can correctly write sentences following a series of predetermined grammatical  structures or rules using a parse tree like this:
-
+Our goal is to parse our text in such a way that we can correctly write sentences following a series of predetermined grammatical  structures or rules using a parse tree such as:
 ![Hm](http://2.bp.blogspot.com/-0OviR_gBISo/U1JJAi67DaI/AAAAAAAAAnE/BSGxu60uDbo/s1600/tree+why_graphs002.png "Chomsky Tree")
+
+So, in simpler words:
+* We want to create a repeating sentence structure that we can organize our sentences with.
+* Use the same subjects in a cohesive way such that the whole text makes sense (this one is tricky and to be honest I'm not sure)
+* Add variation to the sentence structure so our text won't be the same phrase repeated 10 times with different subjects.
+
+In this context, we would like an algorithm that avoids texts like:
+ 
+ *Dante is a demon hunter. Dante likes to kill demons. This text features Dante. Dante is from the Devil May Cry Series. I love Dante. Dante loves Dante*
+ 
+A way to fix this would be pre-classifying verbs/adjectives/nouns we would like our text to feature in a JSON file and then pick at random. That would defy the whole purpose of implementing machine learning training though.
 
