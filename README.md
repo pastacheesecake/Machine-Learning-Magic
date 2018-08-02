@@ -46,13 +46,13 @@ with open('results_poetry.txt','wb') as results:
 
 ```python
 
-\\\ 
+'''
 Simple sentiment analysis module, takes a pickle file and returns basic data.
 Up to you to take more stats and whatnot. 
 Not up for Bayesian hocus pocus atm
 ٩(ఠ益ఠ)۶
 
-\\\
+'''
 
 
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
@@ -85,7 +85,8 @@ analyse(database)
 
 ```
 * *Profit?*
-**Note: It's completely possible to do all this in a big script and cut all the pickle fairy dust but if you're dealing with lots of books, it's gonna take a lot of time though so up to you tbh
+
+**Note: It's completely possible to do all this in a big script and cut all the pickle fairy dust but if you're dealing with lots of books, it's gonna take a lot of time though so up to you tbh**
 
 ## Narrative
 
