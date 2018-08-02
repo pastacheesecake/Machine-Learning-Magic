@@ -151,6 +151,7 @@ The classic NLTK tagging convention is a tuple as follows ('Word','tag')
 As you can probably tell, there are some combinations that make readable sentences, and some that don't; simple English sentence structures would be:
 
 DET | N | VERB  *The dog walks*
+
 N | VERB | ADJ *Dante is cool*
 
 As you can also probably tell, there's infinite combinations that either add or substract a plethora of elements that are optional in a sentence, such as adverbs or determinants. [More info](https://en.wikipedia.org/wiki/Phrase_structure_rules). 
