@@ -86,7 +86,7 @@ analyse(database)
 ```
 * *Profit?*
 
-**Note: It's completely possible to do all this in a big script and cut all the pickle fairy dust but if you're dealing with lots of books, it's gonna take a lot of time though so up to you tbh**
+**Note: It's completely possible to do all this in a big script and cut all the pickle fairy dust but if you're dealing with lots of books, it's gonna take a lot of time so up to you bb**
 
 ## Narrative
 
@@ -106,6 +106,12 @@ To be fair, there's no straight-up method to write narrative texts using NLTK or
 
 ### NLTK-Chomsky cheating
  
-soon
+According to context-free generative grammar, a sentence is -more or less- a specific (terminal or leaf) node of an abstract *generator of sentences* or root node (don't quote me on this).
 
+So, in that regard, from a grammatical point of view a sentence like *John eats a pineapple* is no different than *Dante kills demons*
+. Of course the meaning is very different, but that's semantics and not grammar, duh.
+
+Our goal is to parse our text in such a way that we can correctly write sentences following a series of predetermined grammatical  structures or rules using a parse tree like this:
+
+![Hm](http://2.bp.blogspot.com/-0OviR_gBISo/U1JJAi67DaI/AAAAAAAAAnE/BSGxu60uDbo/s1600/tree+why_graphs002.png "Chomsky Tree")
 
