@@ -18,7 +18,7 @@ Writing poetry and narrative texts using statistical-demon-summoning (cause huma
 
 It all depends on what you want to write, my personal method is quite simple:
 
-1. Get a plain-text library of books you wanna cut-up from and save them in your project folder. *Can get PDFs but then you'd need to extract the text and PDF text-extraction in Python 3 is... not the best tbh) I think there's a Gutenberg Library out there or something that has plain-text books and whatnot* There's some Python 2 modules for this task, also C/C++ are a much better choice.
+1. Get a plain-text library of books you wanna cut-up from and save them in your project folder. *Can get PDFs but then you'd need to extract the text and PDF text-extraction in Python 3 is... not the best tbh) I think there's a Gutenberg Library out there or something that has plain-text books and whatnot*. There are some Python 2 modules for this task too, and in any case C and C++ are a much better choice.
 2. Tokenize the texts using `nltk.tokenize()` and dump those results somewhere *(cause we don't wanna repeat the process every time we write something)* i.e
 
 ```python
